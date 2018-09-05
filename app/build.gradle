@@ -16,6 +16,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 dependencies {
@@ -47,4 +51,9 @@ dependencies {
     //RxAndroid
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
 
+    //WebSocket
+    implementation 'com.neovisionaries:nv-websocket-client:2.5'
+
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
 }
